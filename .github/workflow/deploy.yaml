@@ -1,4 +1,4 @@
-name: Deploy Wiki to GitHub Pages
+name: Deploy Gray Walls Wiki to GitHub Pages
 
 on:
   push:
