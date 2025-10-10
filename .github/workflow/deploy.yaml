@@ -1,0 +1,31 @@
+name: Deploy Wiki to GitHub Pages
+
+on:
+  push:
+    branches: [master]
+  workflow_dispatch:
+
+jobs:
+  build-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Install Zola
+        run: |
+          wget -qO- https://github.com/getzola/zola/releases/latest/download/zola-v0.18.0-x86_64-unknown-linux-gnu.tar.gz | tar xz
+          sudo mv zola /usr/local/bin/
+
+      - name: Build Zola site (in wiki/)
+        working-directory: wiki
+        run: zola build
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./wiki/public
+          publish_branch: gh-pages
+          cname: graywalls.ktnlvr.dev
