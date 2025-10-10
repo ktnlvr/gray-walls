@@ -1,31 +1,69 @@
-name: Deploy Gray Walls Wiki to GitHub Pages
+name: Build and Deploy Zola Site
 
 on:
   push:
     branches: [master]
+  pull_request:
   workflow_dispatch:
 
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
 jobs:
-  build-deploy:
+  build:
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v3
 
       - name: Install Zola
         run: |
           wget -qO- https://github.com/getzola/zola/releases/latest/download/zola-v0.18.0-x86_64-unknown-linux-gnu.tar.gz | tar xz
           sudo mv zola /usr/local/bin/
 
-      - name: Build Zola site (in wiki/)
+      - name: Build Zola site
         working-directory: wiki
         run: zola build
 
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v4
+      - name: Prepare output directory
+        run: |
+          mkdir output
+          cp -r wiki/public/* output/
+          echo "graywalls.ktnlvr.dev" > output/CNAME
+
+      - name: Upload output as artifact
+        uses: actions/upload-artifact@v4
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./wiki/public
-          publish_branch: gh-pages
-          cname: graywalls.ktnlvr.dev
+          name: site-files
+          path: output/
+
+  deploy:
+    if: github.ref == 'refs/heads/master'
+    needs: build
+    runs-on: ubuntu-latest
+
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy-pages.outputs.page_url }}
+
+    steps:
+      - name: Download artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: site-files
+          path: output
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+
+      - name: Upload to GitHub Pages
+        id: deploy-pages
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: output
+
+      - name: Deploy to GitHub Pages
+        uses: actions/deploy-pages@v4
