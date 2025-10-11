@@ -1,5 +1,5 @@
 ---
-title: "Player Expectations"
+title: Player Expectations
 template: "rule.html"
 ---
 

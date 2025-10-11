@@ -1,5 +1,5 @@
 ---
-title: "Teamwork"
+title: Teamwork
 ---
 
 Doing something together is always easier than doing it alone. If you have a pip in an action that another person is doing, you may _assist them_. You may gain 1 stress for 1 additional dice in the ability that they are rolling.

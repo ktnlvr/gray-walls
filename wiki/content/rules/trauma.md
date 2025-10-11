@@ -1,5 +1,5 @@
 ---
-title: "Trauma"
+title: Trauma
 ---
 
 When your characters endure damage it impacts their ability to change the world around them. When receiving trauma

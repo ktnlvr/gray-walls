@@ -1,0 +1,3 @@
+---
+title: Death and Retirement
+---
