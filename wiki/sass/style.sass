@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap')
 
 h1
-    line-height: 2
+    line-height: 1
     font-family: "Spectral SC", serif
     font-weight: 700
     font-style: normal
@@ -13,7 +13,6 @@ h2, h3, h4, h5, h5
     font-family: "Spectral SC", serif
     font-weight: 500
     font-style: normal
-
 body
     font-family: "Besley", serif
     font-style: normal
@@ -30,6 +29,12 @@ main
     padding: 3rem 0 18rem 0
     margin-left: 12rem
     margin-right: 2.5rem
+
+    @media (max-width: 768px)
+        margin-left: 0
+        margin-right: 1rem
+        padding-left: 1rem
+        padding-right: 1rem
 
 code
     font-family: "Space Mono", monospace
