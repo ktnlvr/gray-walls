@@ -19,3 +19,5 @@ When you have more Boons than Banes, you take the highest. When you have more _B
 - A 6 is always a _complete success_, you avoid everything unwanted. For now.
 
 Importantly, a _complete success_ does not guarantee that the player’s intended outcome occurs. Rather, it results in the most favorable _possible_ outcome!
+
+If you rolled when trying to actively do something (as opposed to avoiding something) and you chose not to [Resist](../resisting), you may mark one pip of the attribute

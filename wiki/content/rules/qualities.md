@@ -4,7 +4,7 @@ title: Qualities and Attributes
 
 > I recommend you to look at the character sheet while reading this. Find the respective section on it and follow along.
 
-Your _qualities_ are the mechanical advantage of you over everyone else in the scene. They are split into 3 _attributes_: _The Mind_, _The Body_ and _The Spirit_.
+Your _qualities_ and _attributes_ are the mechanical advantage of you over everyone else in the scene. They are split into 3 _attributes_: _The Mind_, _The Body_ and _The Spirit_.
 
 The value of an _attribute_ is equal to the amount of first pips taken in its qualities. It represents how well that part of your character is able to resist an external influence.
 
@@ -27,4 +27,4 @@ The value of individual _qualities_ within each attribute corresponds to the abi
 | _Investigate_  |                                                               |
 | _Craft_        |                                                               |
 
-Initially, when you have 0 pips in a specific quality you are considered to be rolling it with _+1 Bane_. Every pip gets you a _+1 Boon_ for rolling that quality. Every _first_ pip in an quality also gives you _+1 Boon_ for that _attribute_.
+Initially, when you have 0 pips in a specific quality you are considered to be rolling it with _+1 Bane_. Every pip gets you a _+1 Boon_ for rolling that quality. Every _first_ pip in an _quality_ also gives you _+1 Boon_ for that _attribute_.
