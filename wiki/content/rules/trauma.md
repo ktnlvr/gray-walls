@@ -17,3 +17,5 @@ When their body is injured, a character gains _Physical Trauma_. It can be heale
 ```center
 Clock Sections = 4 + (2 * Trauma Tier)
 ```
+
+When a character’s mind is assaulted, they gain _Mental Trauma_. This trauma can only be healed once its root cause is addressed, and recovery often slow and uncertain.
