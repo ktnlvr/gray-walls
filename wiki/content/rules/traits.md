@@ -2,9 +2,9 @@
 title: Traits
 ---
 
-An interesting character is defined by their shortcomings. _Traits_ correspond to moments when your characters get in trouble for something they can change, but chose to stay the same.
+Traits represent those moments when your character gets into trouble not because they couldn't act differently, but because they choose to.
 
-You can either browse the table and pick whichever sounds most suitable or take the total of `3d6`.
+You can either browse the table and pick whichever sounds most suitable or roll `3d6` and taek the total.
 
 |     | Trait             | Gain experience when...                                         |
 | --- | ----------------- | --------------------------------------------------------------- |
@@ -38,3 +38,4 @@ You can either browse the table and pick whichever sounds most suitable or take 
 | 33  | **Defiant**       | ... standing your ground isolates you from the allies           |
 | 34  | **Dramatic**      | ... a minor inconvenience feels catastrophic                    |
 | 35  | **Superstitious** | ... omens, signs, or coincidences unnervingly aligns            |
+| 36  | **Blunt**         | ... your direct words hurt someone important                    |
