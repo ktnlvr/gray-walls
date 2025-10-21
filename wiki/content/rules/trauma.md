@@ -10,12 +10,10 @@ When your characters endure damage it impacts their ability to change the world 
 - 5 is **Tier 3**. You are on the edge.
 - Anything over is, well, [Death (or Retirement)](../death-and-retirement).
 
-Trauma can be _Physical_ and _Mental_.
-
 When their body is injured, a character gains _Physical Trauma_. It can be healed using a [Clock](../clocks) matching the trauma Tier.
 
 ```center
-Clock Sections = 4 + (2 * Trauma Tier)
+[Clock Sections] = 4 + (2 * Trauma Tier)
 ```
 
 When a character’s mind is assaulted, they gain _Mental Trauma_. This trauma can only be healed once its root cause is addressed, and recovery often slow and uncertain.

@@ -9,7 +9,7 @@ _Boons_ can come from different places. Usually it will be the character's [Qual
 Similarly, _Banes_ will usually be defined by the environment: dim lighting, an opposing force, high guard alertness and so on.
 
 ```center
-Dice Pool = 1 + (difference between Boons and Banes)
+[Dice Pool] = 1 + (difference between Boons and Banes)
 ```
 
 When you have more Boons than Banes, you take the highest. When you have more _Banes_ than _Boons_, you take the lowest. When _Boons_ and _Banes_ cancel out, you roll just take the one dice.
