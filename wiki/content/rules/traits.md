@@ -4,7 +4,7 @@ title: Traits
 
 Traits represent those moments when your character gets into trouble not because they couldn't act differently, but because they choose to.
 
-You can either browse the table and pick whichever sounds most suitable or roll `3d6` and taek the total.
+You can either browse the table and pick whichever sounds most suitable or roll `6d6` and take the total.
 
 |     | Trait             | Gain experience when...                                         |
 | --- | ----------------- | --------------------------------------------------------------- |
