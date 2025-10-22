@@ -38,4 +38,4 @@ You can either browse the table and pick whichever sounds most suitable or roll 
 | 33  | **Defiant**       | ... standing your ground isolates you from the allies           |
 | 34  | **Dramatic**      | ... a minor inconvenience feels catastrophic                    |
 | 35  | **Superstitious** | ... omens, signs, or coincidences unnervingly aligns            |
-| 36  | **Blunt**         | ... your direct words hurt someone important                    |
+| 36  | **Obtuse**        | ... your refusal to accept something leads to a worse decision  |
